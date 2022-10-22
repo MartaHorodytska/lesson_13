@@ -1,0 +1,520 @@
+
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+[class*="__container"] {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: rgb(230, 110, 110);
+
+}
+
+footer {
+    background-color: rgb(137, 137, 226);
+}
+
+.main {
+    height: 600px;
+    width: 100%;
+    background-color: #ffff0061;
+}
+
+h2,
+h1 {
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #424551;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.aquarium {
+    position: relative;
+    top: 380px;
+    height: 188px;
+    width: 224px;
+}
+
+.aqarium__fishes {
+    width: 100%;
+    height: 100%;
+    transform: perspective(100px);
+    transform-style: preserve-3d;
+}
+
+.aquarium__fish {
+    width: 100px;
+    height: 63px;
+    position: relative;
+}
+
+.aquarium__fish--red {
+    top: 139px;
+    left: 197px;
+    animation-name:fish-red;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish-red{
+    100%{
+        left: 97px;
+        top: 39px;
+    }
+}
+
+.aquarium__fish--gold {
+    top: -240px;
+    left: 140px;
+    transform: rotate3d(0, -1, 0, 182deg);
+    animation-name:fish-gold;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish-gold{
+    100%{
+        left: 40px;
+        top: 40px;
+    }
+}
+.aquarium__fisch-head {
+    z-index: 2;
+    border: 15px solid transparent;
+    border-left: 13px solid green;
+    position: absolute;
+    left: 297px;
+    bottom: 119px;
+
+}
+
+.aquarium__fisch-head--red {
+    left: 89px;
+    bottom: 10px;
+}
+
+.aquarium__fisch-head--gold {
+    left: 89px;
+    bottom: 10px;
+}
+
+.aquarium__fisch-body {
+    z-index: 2;
+    border: 15px solid transparent;
+    position: absolute;
+    left: 266px;
+    bottom: 119px;
+}
+
+.aquarium__fisch-body--red {
+    left: 659px;
+    bottom: -510px;
+    background-color: red;
+    animation-name:fisch-body--red;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fisch-body--red{
+    100%{
+        left: 59px;
+        bottom: 10px;
+    }
+}
+
+.aquarium__fisch-body--gold {
+    left: 659px;
+    bottom: 100px;
+    background-color: yellow;
+    animation-name:fisch-body--gold;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fisch-body--gold{
+    100%{
+        left: 59px;
+        bottom: 10px;
+    }
+}
+.aquarium__fish-tail-top {
+    z-index: 1;
+    border: 14px solid transparent;
+    border-bottom: 16px solid green;
+    border-left: 14px solid green;
+    position: absolute;
+    left: 266px;
+    bottom: 150px;
+}
+
+.aquarium__fish-tail-top--red {
+    left: 60px;
+    bottom: 40px;
+}
+
+.aquarium__fish-tail-top--gold {
+    left: 60px;
+    bottom: 40px;
+}
+
+.aquarium__fish-tail-botton {
+    z-index: 1;
+    border: 19px solid transparent;
+    border-left: 16px solid green;
+    border-top: 10px solid green;
+    position: absolute;
+    left: 270px;
+    bottom: 101px;
+}
+
+.aquarium__fish-tail-botton--red {
+    left: 62px;
+    bottom: -9px;
+}
+
+.aquarium__fish-tail-botton--gold {
+    left: 62px;
+    bottom: -9px;
+}
+
+.aquarium__fish-tail-back {
+    z-index: 1;
+    border: 28px solid transparent;
+    border-right: 15px solid green;
+    border-bottom: 15px solid green;
+    position: absolute;
+    left: 224px;
+    bottom: 115px;
+    transform: rotate3d(0, 1, 1, -58deg);
+}
+
+.aquarium__fish-tail-back--red {
+    left: 4px;
+    bottom: 198px;
+    animation-name:fish-tail-back--red;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish-tail-back--red{
+    100%{
+        left: 24px;
+        bottom: 8px;
+    }
+}
+.aquarium__fish-tail-back--gold {
+    left: 124px;
+    bottom: 98px;
+    animation-name:fish-tail-back--gold;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish-tail-back--gold{
+    100%{
+        left: 24px;
+        bottom: 8px;
+    }
+}
+.aquaruim__body
+{
+    position: absolute;
+    width: 221px;
+    height: 164px;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(17, 91, 168, 0.6561975131849616) 26%, rgba(0, 212, 255, 1) 100%);
+    top: -223px;
+    left: 494px;
+    border-radius: 47px;
+    animation-name:aquarium;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes aquarium{
+    100%{
+        left: 4px;
+        top: 23px;
+    }
+}
+.aquarium__top {
+    left: 361px;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(17, 91, 168, 0.6561975131849616) 26%, rgb(0 212 255 / 41%) 100%);
+    height: 21px;
+    width: 117px;
+    position: absolute;
+    bottom: -64px;
+    animation-name:top;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes top{
+    100%{
+        left: 61px;
+        bottom: 164px;
+    }
+}
+.cat {
+    position: relative;
+    width: 300px;
+    height: 319px;
+    bottom: -97px;
+    left: 232px;
+}
+
+
+
+.cat__head {
+    z-index: 2;
+    left: 500px;
+    position: absolute;
+    width: 100px;
+    height: 94px;
+    border-radius: 50%;
+    background: rgb(228, 179, 123);
+    animation-name:cat-head;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-head {
+    100%{
+        left: 92px;
+    }
+}
+.cat__ears-left {
+    position: absolute;
+    left: -300px;
+    animation-name:cat-ears-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-ears-left {
+    100%{
+        left: 140px;
+    }
+}
+
+.cat__ear-left {
+    border: 30px solid transparent;
+    border-top: 20px solid rgb(237, 160, 71);
+    border-right: 22px solid rgb(237, 160, 71);
+}
+
+.cat__ears-right {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    animation-name:cat-ears-right;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-ears-right {
+    100%{
+        left: 92px;
+        top: 0;
+    }
+}
+.cat__ear-right {
+    border: 30px solid transparent;
+    border-left: 20px solid rgb(237, 160, 71);
+    border-top: 22px solid rgb(237, 160, 71);
+}
+
+.cat__eyes {
+    z-index: 2;
+    top: 30px;
+    left: 492px;
+    position: relative;
+    width: 100px;
+    height: 31px;
+    animation-name:cat-eyes;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-eyes{
+    100%{
+        left: 92px;
+    }
+}
+.cat__eye{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: gray;
+    border-radius: 50%;
+}
+.cat__eye-right {
+    left: 17px;
+    top: 5px;
+}
+.cat__eye-left {
+    left: 62px;
+    top: 5px;
+}
+.cat__eye-center{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    animation-name:eye-center;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+}
+@keyframes eye-center{
+    0%{
+        left: 5px;
+    }
+    35%{
+        left: 3px;
+    }
+    65%{
+        left: 5px;
+    }
+    100%{
+        left: 9px;
+    }
+}
+
+.cat__mouth {
+    position: absolute;
+    top: 140px;
+    position: absolute;
+    left: 30px;
+    z-index: 2;
+    animation-name:cat-mouth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-mouth{
+    100%{
+        left: 121px;
+        top: 40px;
+    }
+}
+.cat__mouth-form{
+    border: 20px solid transparent; border-bottom: 20px solid rgb(190, 129, 59);
+}
+.cat__nose {top: 50px;
+    left: 136px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: wheat;
+    border-radius: 50%;
+    z-index: 2;}
+
+.cat__body {
+    z-index: 1;
+    top: 4px;
+    border-radius: 95px;
+    position: absolute;
+    width: 137px;
+    height: 197px;
+    background: rgb(190, 129, 59);
+    left: 272px;
+    animation-name:cat-body;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-body{
+    100%{
+        left: 72px;
+        top: 74px;
+    }
+}
+.cat__legs-left-top{
+    position: absolute;
+    bottom: 15px;
+    left: 8px;
+    z-index: 1;
+    animation-name:cat-legs-left-top;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-legs-left-top{
+    100%{
+        left: 80px;
+        bottom: 152px;
+    }
+}
+.cat__legs-left {
+    position: absolute;
+    bottom: 137px;
+    left: 279px;
+    animation-name:cat-legs-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-legs-left{
+    100%{
+        left: 79px;
+        bottom: 37px;
+    }
+}
+.cat__leg-left,
+.cat__leg-left-top{
+    border: 20px solid transparent; border-right: 20px solid rgb(227, 136, 31); border-bottom: 20px solid rgb(227, 136, 31);
+}
+.cat__legs-right{
+    position: absolute;
+    bottom: 137px;
+    left: 62px;
+    animation-name:cat-legs-right;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-legs-right{
+    100%{
+        left: 162px;
+        bottom: 37px;
+    }
+}
+.cat__legs-right-top{
+    position: absolute;
+    bottom: 15px;
+    left: 62px;
+    z-index: 1;
+    animation-name:cat-legs-right-top;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes cat-legs-right-top{
+    100%{
+        left: 162px;
+        bottom: 150px;
+    }
+}
+.cat__leg-right,
+.cat__leg-right-top
+{
+    border: 20px solid transparent; border-bottom: 20px solid rgb(227, 136, 31); border-left: 20px solid rgb(227, 136, 31);
+}
+.table {
+    position: relative;
+    top: -473px;
+    left: 170px;
+    width: 618px;
+    height: 20px;
+    background: brown;
+    bottom: -60px;
+    animation-name:table;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes table{
+    100%{
+        left: 0px;
+        bottom: -60px;
+        top: 60px;
+    }
+}
